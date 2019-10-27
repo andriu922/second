@@ -15,6 +15,6 @@ class GRL extends Controller
     public function __invoke(Request $request)
     {
         //
-       
+       return redirect('https://www.gnu.org/licenses/gpl-3.0.ru.html');
     }
 }

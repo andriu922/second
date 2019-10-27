@@ -13,9 +13,9 @@ class AppInfo extends Controller
 
     public function Contacts () {
         return view('contact',[
-            'name' => 'andrii',
+            'name' => 'company@inc.',
             'mail' => 'aaa@mail.ru',
-            'phone' => '(111) 11-11-1-1'
+            'num' => '(111) 11-11-1-1'
         ]);
     }
 }

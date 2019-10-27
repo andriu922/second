@@ -4,6 +4,8 @@
 
 
 @section('content')
-    <h1> hello {{$name}} </h1>
+    <h3>Company Name --- {{$name}} </h3>
+    <h3> Our Number --- {{$num}}</h3>
+    <h3> Our Mail --- {{$mail}}</h3> 
 @endsection
 

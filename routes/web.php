@@ -22,3 +22,4 @@ Route::get('/', function () {
 // AppInfo
     Route::get('/about', 'AppInfo@About');
     Route::get('/contact', 'AppInfo@Contacts');
+    Route::get('/license', 'GRL');
