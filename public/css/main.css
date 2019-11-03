@@ -1,9 +1,14 @@
 nav a{
     text-decoration: none ;
-    color: white ;
+    color: black ;
     padding: 10px ;
 }
 body{
-    color: white ; 
-    background:linear-gradient(to left, yellow 30%, black 70%);
+    color:black ; 
+    background:linear-gradient(to left, yellow 30%,white 70%);
+}
+
+.logo_git{
+    position: fixed;
+    
 }
