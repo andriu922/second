@@ -1,7 +1,12 @@
-nav a{
-    text-decoration: none ;
+a{
+    text-decoration: none ; 
     color: black ;
+}
+
+nav.main_nav a{
+    
     padding: 10px ;
+    font-size: 30px ;
 }
 body{
     color:black ; 
@@ -11,4 +16,19 @@ body{
 .logo_git{
     position: fixed;
     
+}
+
+.navbar-nav {
+    position: fixed;
+    top: 1%;
+    left: 85%;
+}
+.about_us {
+    padding-top: 40px;
+}
+
+nav.main_nav a:hover{
+    background-color: #FFFA84;
+    border:3px red ridge ;
+    border-radius: 10px;
 }
