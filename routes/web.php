@@ -35,4 +35,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/image-manager','ImagesController');
 
-Route::resource('/blog','BlogController');
+Route::get('/account', 'AccountController@Account'); 

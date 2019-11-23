@@ -32,3 +32,13 @@ nav.main_nav a:hover{
     border:3px red ridge ;
     border-radius: 10px;
 }
+
+.acc_logo{
+    border: 5px black solid ;
+    border-radius: 15px;
+    position: fixed;
+    top: 8%;
+    left: 3%;
+    width: 185px; 
+    height: 200px ;
+}
