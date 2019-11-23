@@ -44,6 +44,9 @@ nav.main_nav a:hover{
     height: 200px ;
 }
 
-/* .acc_name{
-
-} */
+ .acc_name{
+    position: fixed;
+    top: 8%;
+    left: 28%;
+    font-size: 25px;
+} 
