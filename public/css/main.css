@@ -34,6 +34,10 @@ nav.main_nav a:hover{
     border-radius: 10px;
 }
 
+.used-images{
+    max-width: 100%;
+}
+
 .acc_logo{
     border: 5px black solid ;
     border-radius: 15px;
@@ -50,3 +54,11 @@ nav.main_nav a:hover{
     left: 28%;
     font-size: 25px;
 } 
+
+.blog-div{
+    position: relative;
+    left:5%;
+    width: 40%;
+    margin-top: 15px ;
+    font-size: 20px;
+}

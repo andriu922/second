@@ -15,9 +15,10 @@ class BlogController extends Controller
     public function index()
     {
         //
-        $names = DB::table('blog')->get();
-        return view('blog.list', ['names'=>$names]);
-        //return view('blog.list');
+        $nm = DB::table('blog')->get();
+        return view('blog.list',[
+            'poem_name'=>$nm
+        ]);
     }
 
     /**

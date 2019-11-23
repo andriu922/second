@@ -69,6 +69,8 @@
                 <a href="/home">Home</a>
                 <a href="/about">About</a>
                 <a href="/contact">Contact Us</a>
+                <a href="/blog">Blog</a>
+                <a href="/image-manager">Images</a>
                 <a href="/license">License</a>
             </nav>
         </nav>

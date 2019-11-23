@@ -36,3 +36,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/image-manager','ImagesController');
 
 Route::get('/account', 'AccountController@Account'); 
+
+Route::resource('/blog', 'BlogController');
