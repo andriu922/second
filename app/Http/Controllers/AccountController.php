@@ -11,6 +11,8 @@ class AccountController extends Controller
     
     public function Account() {
         $nm = DB::table('users')->get();
-        return view('account.account',['name'=>$nm]);
+        return view('account.account',
+        ['acc_name'=>$nm]
+    );
     }
 }

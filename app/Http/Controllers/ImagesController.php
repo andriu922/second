@@ -16,7 +16,7 @@ class ImagesController extends Controller
     {
         //
             $imgs = DB::table('image')->get();
-            return view('image.list', ['imgs' =>$imgs]); 
+            return view('image.list', ['imgs'=>$imgs]); 
         
     }
 

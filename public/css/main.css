@@ -11,6 +11,7 @@ nav.main_nav a{
 body{
     color:black ; 
     background:linear-gradient(to left, yellow 30%,white 70%);
+    font-family: 'Calistoga', cursive;
 }
 
 .logo_git{
@@ -41,4 +42,8 @@ nav.main_nav a:hover{
     left: 3%;
     width: 185px; 
     height: 200px ;
+}
+
+.acc_name{
+
 }
