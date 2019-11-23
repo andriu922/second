@@ -8,8 +8,9 @@ use Illuminate\Support\Facades\DB;
 class AccountController extends Controller
 {
     //
-    $nm = DB::table('user')->get();
+    
     public function Account() {
-        return view('account.account',['name'->$nm]);
+        $nm = DB::table('users')->get();
+        return view('account.account',['name'=>$nm]);
     }
 }
