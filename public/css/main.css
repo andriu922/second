@@ -34,15 +34,11 @@ nav.main_nav a:hover{
     border-radius: 10px;
 }
 
-.used-images{
-    max-width: 100%;
-}
-
 .acc_logo{
     border: 5px black solid ;
     border-radius: 15px;
     position: fixed;
-    top: 8%;
+    top: 10%;
     left: 3%;
     width: 185px; 
     height: 200px ;
@@ -50,8 +46,8 @@ nav.main_nav a:hover{
 
  .acc_name{
     position: fixed;
-    top: 8%;
-    left: 28%;
+    top: 10%;
+    left: 23%;
     font-size: 25px;
 } 
 
@@ -61,4 +57,38 @@ nav.main_nav a:hover{
     width: 40%;
     margin-top: 15px ;
     font-size: 20px;
+}
+
+.tabloid{
+    
+    border: 3px black solid;
+    width: 40%;
+    height: 20% ;
+    padding:5px ;
+    margin-bottom: 10px;
+}
+.used-images{
+    width: 30%;
+    height: 30%;
+    
+}
+
+.tabl{
+   padding: 0px auto ;
+   margin: 0px auto;
+   margin-right: 2px ;
+   margin-bottom: 5px ;
+   text-align: center;
+   padding-right:5px;
+   padding-left: 5px ;
+
+}
+
+.prew{
+    margin-top: 5px;
+}
+
+.inner-tabloid{
+    /* border: 1px black solid; */
+    max-width: 100%;
 }
