@@ -1,5 +1,5 @@
-
-<!-- <h1>Images</h1>
+<!-- 
+ <h1>Images</h1>
 @component('btn_del')
 @endcomponent
 <table>
@@ -14,7 +14,7 @@
     <tr>
         <td><img src="{{ $img->url }}" alt="" style='width: 30% ; height:30%;' ></td>
     </tr>
-</table> -->
+</table> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,22 +26,62 @@
 </head>
 <body>
     
-<h1><a href="/image-manager"> <img src="/image/arr_left.png" alt="" class='arr'> Go back</a></h1>
+<h1><a href="/image-manager" class='back'> <img src="/image/arr_left.png" alt="" class='arr'> Go back</a></h1>
+@component('btn_edit')
+@endcomponent
 @component('btn_del')
 @endcomponent
-<table>
-    <tr>
+<table class='tabloid table'>
+    <tr class='tabloid'>
         <td>ID</td>
         <td>{{ $img->id }}</td>
     </tr>
-    <tr>
+    <tr class='tabloid'>
         <td>Filename</td>
         <td>{{ $img->filename }}</td>
     </tr>
-    <tr>
-        <td><img src="{{ $img->url }}" alt="" style='width: 30% ; height:30%;' ></td>
-    </tr>
-</table>        
 
+</table>        
+<table class="tabloid table">
+    <tr class="tabloid">
+        <td class="tabloid">ID</td>
+        <td class="tabloid">{{ $img->id }}</td>
+    </tr>
+    <tr class="tabloid">
+        <td class="tabloid">Filename</td>
+        <td class="tabloid">{{ $img->filename }}</td>
+    </tr>
+</table>
+<img src="{{ $img->url }}" alt="" class='im_g' >
 </body>
-</html>
+</html> -->
+@extends('layouts.app')
+@section('content')
+<h1><a href="/image-manager" class='back'> <img src="/image/arr_left.png" alt="" class='arr'> Go back</a></h1>
+@component('btn_edit')
+@endcomponent
+@component('btn_del')
+@endcomponent
+<!-- <table class='tabloid table'>
+    <tr class='tabloid'>
+        <td>ID</td>
+        <td>{{ $img->id }}</td>
+    </tr>
+    <tr class='tabloid'>
+        <td>Filename</td>
+        <td>{{ $img->filename }}</td>
+    </tr>
+
+</table>         -->
+<table class="tabloid table">
+    <tr class="tabloid">
+        <td class="tabloid">ID</td>
+        <td class="tabloid">{{ $img->id }}</td>
+    </tr>
+    <tr class="tabloid">
+        <td class="tabloid">Filename</td>
+        <td class="tabloid">{{ $img->filename }}</td>
+    </tr>
+</table>
+<img src="{{ $img->url }}" alt="" class='im_g' >
+@endsection

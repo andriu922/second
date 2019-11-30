@@ -1,3 +1,3 @@
-<button class='manage-bt'>
+<button style='margin-right: 5px ;'>
     {{ $slot }}
 </button>

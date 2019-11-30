@@ -51,6 +51,10 @@ class BlogController extends Controller
     public function show($id)
     {
         //
+        $blog_id = DB::table('blog')->find($id);
+        return view('blog.show',[
+            'bl'=>$blog_id
+        ]);
     }
 
     /**
@@ -85,5 +89,7 @@ class BlogController extends Controller
     public function destroy($id)
     {
         //
+        $del = DB::table('blog')->delete($id);
+        return view('blog.list');
     }
 }

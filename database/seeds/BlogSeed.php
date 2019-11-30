@@ -20,8 +20,12 @@ class BlogSeed extends Seeder
                 'poem'=>'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum officiis omnis delectus nihil, voluptates eos aspernatur doloribus nobis dicta! Quasi odio magnam tempora dolor ipsum, natus maxime perspiciatis unde fuga!'
             ],
             [
-                'second'=>'Banana Man',
+                'name'=>'Banana Man',
                 'poem'=>'Little big'
+            ],
+            [
+                'name'=>'Delete me',
+                'poem'=>'Destroy me'
             ]
         ]);
 
