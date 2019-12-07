@@ -8,15 +8,14 @@
     min-width: 60% ;
 }
 
-a{
-    text-decoration: none ; 
-    color: black ;
+hr{
+    margin-top: 15px;
 }
+
 .img-mng{
     text-decoration: underline ;
 }
-
-nav.main_nav a{
+.main_nav a{
     
     padding: 10px ;
     font-size: 30px ;
@@ -28,6 +27,8 @@ body{
 }
 
 .logo_git{
+    max-width: 10%;
+    max-height: 13%;
     position: fixed;
     
 }
@@ -37,15 +38,23 @@ body{
     top: 1%;
     left: 85%;
     margin: 10px;
+    text-decoration: none ; 
 }
 .about_us {
     padding-top: 40px;
 }
 
-nav.main_nav a:hover{
+.navigation a{
+    color: black;
+}
+
+.navigation a:hover, a:focus{
+    color: black;
+    text-decoration: none;
     background-color: #FFFA84;
     border:3px red ridge ;
     border-radius: 10px;
+    padding: 0px;
 }
 
 .acc_logo{
@@ -79,7 +88,6 @@ nav.main_nav a:hover{
 }
 
 .tabloid{
-    
     border: 3px black solid;
     border-radius: 10px;
     width: 40%;
@@ -110,7 +118,6 @@ nav.main_nav a:hover{
 }
 
 .inner-tabloid{
-    /* border: 1px black solid; */
     max-width: 100%;
 }
 
