@@ -88,5 +88,10 @@ class ImagesController extends Controller
     public function destroy($id)
     {
         //
+        DB::table('image')
+            ->where('id','=',$id)
+            ->delete();
+        return redirect('/image-manager');
+        
     }
 }
