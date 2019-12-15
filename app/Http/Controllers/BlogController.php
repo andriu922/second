@@ -89,7 +89,7 @@ class BlogController extends Controller
     public function destroy($id)
     {
         //
-        $del = DB::table('blog')->where(['id'=>$id])->delete();
+        DB::table('blog')->where('id', '=', $id)->delete();
         return redirect('/blog');
     }
 }

@@ -73,7 +73,7 @@
                             <a href="/home" class=''>Home</a>
                             <a href="/about" class=''>About</a>
                             <a href="/contact" class=''>Contact Us</a>
-                            <a href="/blog" class=''>Blog</a>
+                            <!-- <a href="/blog" class=''>Blog</a> -->
                             <a href="/image-manager" class=''>Images</a>
                             <a href="/license" class=''>License</a>
                     </div>

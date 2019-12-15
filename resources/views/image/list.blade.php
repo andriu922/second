@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<button><a href="/image-manager/create">[[CREATE]]</a></button>
 
 
 @foreach($imgs as $i)

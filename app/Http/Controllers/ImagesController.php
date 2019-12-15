@@ -28,6 +28,7 @@ class ImagesController extends Controller
     public function create()
     {
         //
+        return view('image.form');
     }
 
     /**
@@ -39,6 +40,8 @@ class ImagesController extends Controller
     public function store(Request $request)
     {
         //
+
+        return redirect('/image-manager');
     }
 
     /**
