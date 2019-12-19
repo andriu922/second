@@ -1,0 +1,18 @@
+body{
+    background-color: #f0fff7;
+    font-family: 'Indie Flower', cursive;
+}
+
+.centered{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+.header{
+    font-size:35px ;
+}

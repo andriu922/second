@@ -48,7 +48,7 @@ body{
     color: black;
 }
 
-.navigation a:hover, a:focus{
+.navigation:hover, .navigation:focus{
     color: black;
     text-decoration: none;
     background-color: #FFFA84;
