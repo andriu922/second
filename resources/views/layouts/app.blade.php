@@ -67,6 +67,7 @@
                     </ul>
                 </div>
             </div>
+<<<<<<< HEAD
         </div> -->
         <!-- <div class="header container-fluid bg-dark text-light">
             <div class="col-12-lg">
@@ -96,6 +97,7 @@
                         <div>
                         <ul class="navbar-nav mr-auto">
                     </ul>
+
 
                     
                     <ul class="navbar-nav ml-auto">
