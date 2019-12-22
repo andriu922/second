@@ -24,67 +24,9 @@
     <link rel="stylesheet" href="{{ asset('css/second-main.css') }}">
 </head>
 <body>
-    <!-- <div id="app">
-        <nav class="navbar navbar-expand-md">
-            <div class="container">
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    
-                    <ul class="navbar-nav mr-auto">
-                    </ul>
-
-                    
-                    <ul class="navbar-nav ml-auto">
-                    
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link " href="/account" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="nav-item " >
-                                    <a class="" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-<<<<<<< HEAD
-        </div> -->
-        <!-- <div class="header container-fluid bg-dark text-light">
-            <div class="col-12-lg">
-                <ul class="navigation nav nav-tabs ">
-                    <li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="/license" class="nav-link">License</a></li>
-                    <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="/image-manager" class="nav-link">Images</a></li>
-                </ul>
-            
-                
-        </div> -->
         <div class="header">
             <nav class="navbar navbar-expand-lg bg-dark text-light ">
-            <a href="/home" class="navbar-brand">Laravel Blog</a>
+            <a href="/home" class="navbar-brand pr-name">Laravel Blog</a>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
