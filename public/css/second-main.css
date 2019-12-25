@@ -1,6 +1,7 @@
 body{
     background-color: #f0fff7;
     font-family: 'Indie Flower', cursive;
+    color: black;
 }
 
 .centered{
@@ -16,3 +17,14 @@ li{
 .header{
     font-size:35px ;
 }
+
+.content{
+    margin-top: 12%;
+}
+
+.site-name{
+    font-size: 2rem ; 
+}
+ .site-nvg{
+     font-size: 2rem;
+ }
