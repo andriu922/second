@@ -24,9 +24,15 @@
     <link rel="stylesheet" href="{{ asset('css/second-main.css') }}">
 </head>
 <body>
+<<<<<<< HEAD
         <div class="header fixed-top col-12-lg">
             <nav class="navbar navbar-expand-lg bg-dark ">
             <a href="/home" class="navbar-brand site-name">Laravel Blog</a>
+=======
+        <div class="header">
+            <nav class="navbar navbar-expand-lg bg-dark text-light ">
+            <a href="/home" class="navbar-brand pr-name">Laravel Blog</a>
+>>>>>>> 30117aaa38436942b46914c7120fe410c035859f
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto site-nvg">
                         <li class="nav-item"><a href="/about" class="nav-link ">About</a></li>

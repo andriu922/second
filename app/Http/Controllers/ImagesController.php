@@ -40,7 +40,18 @@ class ImagesController extends Controller
     public function store(Request $request)
     {
         //
-
+        $title = $request->input('im_title');
+        $alt = $request->input('im_alt');
+        $file = $request->file('im_file');
+        $path = $file->store('public');
+        $url = str_replace('public/', '/storage/', $path);
+        DB::table('image')->insertGetId([
+            'url' => $url,
+            'filename' => $path,
+            'alt' => $title . '(' . $alt . ')'
+        ]);
+        //var_dump($file);
+        //return view('image.form');
         return redirect('/image-manager');
     }
 

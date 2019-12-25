@@ -1,13 +1,4 @@
 @extends('layouts.app') @section('content')
-<!-- Image URL
-    <input type="text" id = 'ULR'><br>
-    Image Filename
-    <input type="text" id = 'filename'><br>
-
-    <form action="/image-manager" method='POST'>
-        @csrf
-        <button type='submit'>Save</button>
-    </form> -->
 <form action="/image-manager" method="POST" enctype="multipart/form-data">
     @csrf
     <label for="im_title">
