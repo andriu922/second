@@ -20,7 +20,6 @@ li {
     font-size: 25px;
 }
 
-<<<<<<< HEAD
 .content{
     margin-top: 12%;
 }
@@ -31,8 +30,13 @@ li {
  .site-nvg{
      font-size: 2rem;
  }
-=======
 .header {
     font-size: 20px;
 }
->>>>>>> 30117aaa38436942b46914c7120fe410c035859f
+
+.ctrl-area{
+    min-width: 100%;
+}
+.ctrl-btn{
+    position: relative;
+}
