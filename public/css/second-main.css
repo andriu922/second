@@ -22,3 +22,19 @@ li {
 .header {
     font-size: 20px;
 }
+
+.arr{
+    max-width: 5%;
+}
+
+.logo_git{
+    max-width: 10%;
+    position: absolute;
+}
+
+.used-images{
+    max-width: 20%;
+}
+table, tr, th{
+    border: 1px black solid;
+}

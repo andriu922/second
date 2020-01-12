@@ -1,4 +1,5 @@
-@extends('layouts.app') @section('content')
+@extends('layouts.app')
+@section('content')
 <form action="/image-manager" method="POST" enctype="multipart/form-data">
     @csrf
     <label for="im_title">
@@ -17,5 +18,5 @@
     <input type="submit">
 </form>
 
-<form>
+
     @endsection

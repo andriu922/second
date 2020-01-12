@@ -15,6 +15,7 @@ class CreateImageTable extends Migration
     {
         Schema::create('image', function(Blueprint $table){
             $table->BigIncrements('id');
+            $table->string('title');
             $table->string('url');
             $table->string('filename');
             $table->string('alt')->nullable();
