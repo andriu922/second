@@ -5,7 +5,7 @@
 
 @foreach($imgs as $i)
 
-<div class="card bg-secondary" style="width: 18rem;">
+<div class="imCard card bg-secondary" style="width: 18rem;">
     <img src="{{ $i->url }}" alt="" class="card-img-top">
     <div class="card-body">
         <h5 class="card-title text-center">ID: {{ $i->id }}</h5>

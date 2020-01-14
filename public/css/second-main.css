@@ -21,7 +21,7 @@ li {
 }
 
 .content{
-    margin-top: 12%;
+    margin-top:15px;
 }
 
 .site-name{
@@ -39,4 +39,7 @@ li {
 }
 .ctrl-btn{
     position: relative;
+}
+.imCard{
+    margin: 5px;
 }
