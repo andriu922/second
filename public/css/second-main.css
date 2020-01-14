@@ -34,12 +34,26 @@ li {
     font-size: 20px;
 }
 
-.ctrl-area{
-    min-width: 100%;
+.arr{
+    max-width: 5%;
 }
+<<<<<<< HEAD
 .ctrl-btn{
     position: relative;
 }
 .imCard{
     margin: 5px;
+=======
+
+.logo_git{
+    max-width: 10%;
+    position: absolute;
+}
+
+.used-images{
+    max-width: 20%;
+}
+table, tr, th{
+    border: 1px black solid;
+>>>>>>> c8a8d515079d8f8af0d668d72cc80777489d78d5
 }

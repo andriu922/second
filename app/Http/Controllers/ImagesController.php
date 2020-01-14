@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\UploadedFile;
 
 class ImagesController extends Controller
 {
@@ -46,6 +48,7 @@ class ImagesController extends Controller
         $path = $file->store('public');
         $url = str_replace('public/', '/storage/', $path);
         DB::table('image')->insertGetId([
+            'title' => $title,
             'url' => $url,
             'filename' => $path,
             'alt' => $title . '(' . $alt . ')'
@@ -79,6 +82,11 @@ class ImagesController extends Controller
     public function edit($id)
     {
         //
+        $ed_im = DB::table('image')->find($id);
+        return view('image.EDform', [
+            'img'=>$ed_im
+        ]);
+        
     }
 
     /**
@@ -91,6 +99,23 @@ class ImagesController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $title = $request->input('im_title');
+        $alt = $request->input('im_alt');
+        $file = $request->file('im_file');
+        $path = $file->store('public');
+        $url = str_replace('public/', '/storage/', $path);
+
+        DB::table('image')->where('id','=',$id)->update([
+            'title' => $title,
+            'alt' => $alt
+        ]);
+        if($request->hasFile('im_file')){
+            DB::table('image')->where('id', '=', $id)->update([
+                'filename'=>$path,
+                'url'=>$url
+            ]);
+        }
+        return redirect ('/image-manager');
     }
 
     /**
@@ -102,6 +127,8 @@ class ImagesController extends Controller
     public function destroy($id)
     {
         //
+        // $im_d = DB::table('image');
+        // Storage::delete('filename'->$im_d);
         DB::table('image')
             ->where('id','=',$id)
             ->delete();

@@ -6,15 +6,19 @@
 @endcomponent
 @component('btn_del')
 @endcomponent
-<table class="tabloid table">
-    <tr class="tabloid">
-        <td class="tabloid">ID</td>
-        <td class="tabloid">{{ $img->id }}</td>
+<table >
+    <tr >
+        <td>ID</td>
+        <td>{{ $img->id }}</td>
     </tr>
-    <tr class="tabloid">
-        <td class="tabloid">Filename</td>
-        <td class="tabloid">{{ $img->filename }}</td>
+    <tr >
+        <td>Filename</td>
+        <td>{{ $img->filename }}</td>
+    </tr>
+    <tr>
+        <td>Title</td>
+        <td>{{ $img->title }}</td>
     </tr>
 </table>
-<img src="{{ $img->url }}" alt="" class='im_g' >
+<img src="{{ $img->url }}" alt="" class='used-images' >
 @endsection
