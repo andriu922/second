@@ -20,32 +20,42 @@ li {
     font-size: 25px;
 }
 
-.content{
-    margin-top:15px;
+.content {
+    margin-top: 15px;
 }
 
-.site-name{
-    font-size: 2rem ; 
+.site-name {
+    font-size: 2rem;
 }
- .site-nvg{
-     font-size: 2rem;
- }
+
+.site-nvg {
+    font-size: 2rem;
+}
+
 .header {
     font-size: 20px;
 }
 
-.arr{
+.arr {
     max-width: 5%;
 }
 
-.logo_git{
+.logo_git {
     max-width: 10%;
     position: absolute;
 }
 
-.used-images{
+.used-images {
     max-width: 20%;
 }
-table, tr, th{
+
+table,
+tr,
+th {
     border: 1px black solid;
+}
+
+#c1 {
+    top: 40%;
+    left: 10%;
 }
