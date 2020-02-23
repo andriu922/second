@@ -9,6 +9,9 @@ use Illuminate\Http\UploadedFile;
 
 class ImagesController extends Controller
 {
+    public function __construct() {
+       // $this->midleware();
+    } 
     /**
      * Display a listing of the resource.
      *
@@ -99,22 +102,26 @@ class ImagesController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $img = DB::table('image')->find($id);
+        $path = $img->filename;
+        $url = $img->url;
         $title = $request->input('im_title');
         $alt = $request->input('im_alt');
-        $file = $request->file('im_file');
-        $path = $file->store('public');
-        $url = str_replace('public/', '/storage/', $path);
+
+        if($request->hasFile('im_file')){
+            Storage::delete($path);
+            $file = $request->file('im_file');
+            $path = $file->store('public');
+            $url = str_replace('public/', '/storage/', $path);
+        }
 
         DB::table('image')->where('id','=',$id)->update([
             'title' => $title,
-            'alt' => $alt
+            'alt' => $alt,
+            'url' => $url,
+            'filename' => $path
         ]);
-        if($request->hasFile('im_file')){
-            DB::table('image')->where('id', '=', $id)->update([
-                'filename'=>$path,
-                'url'=>$url
-            ]);
-        }
+
         return redirect ('/image-manager');
     }
 
@@ -127,8 +134,9 @@ class ImagesController extends Controller
     public function destroy($id)
     {
         //
-        // $im_d = DB::table('image');
-        // Storage::delete('filename'->$im_d);
+        $image = DB::table('image')->find($id);
+        $flname = $image->filename;
+        Storage::delete($flname);
         DB::table('image')
             ->where('id','=',$id)
             ->delete();

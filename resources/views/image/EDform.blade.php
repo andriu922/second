@@ -20,5 +20,4 @@
 </form>
 <img src="{{ $img->url }}" alt="">
 
-
-    @endsection
+@endsection
