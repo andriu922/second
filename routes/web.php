@@ -25,6 +25,9 @@
     Route::get('/contact', 'AppInfo@Contacts');
     Route::get('/license', 'GRL');
     Route::get('/git','Git');
+
+    Route::get('/account', 'AccController@Show'); //Dorobutu kontroller
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -35,6 +38,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/image-manager','ImagesController');
 
-Route::get('/account', 'AccountController@Account'); 
-
 Route::resource('/blog', 'BlogController');
+

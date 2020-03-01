@@ -8,6 +8,7 @@
         <th>ID</th>
         <th>Title</th>
         <th>File name</th>
+        <th>Alt</th>
         <th>DEL</th>
         <th>ED</th>
         <th>Preview</th>
@@ -17,6 +18,7 @@
     <th>{{ $i->id }}</th>
     <th>{{ $i->title }}</th>
     <th><a href="/image-manager/{{ $i->id }}" class='img-mng'>{{ $i->filename }}</a></th>
+    <th>{{ $i->alt }}</th>
     <th>        <form action="/image-manager/{{ $i->id }}" method='POST'>
             @csrf
             @method('DELETE')
