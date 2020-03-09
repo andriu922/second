@@ -26,6 +26,8 @@
     Route::get('/license', 'GRL');
     Route::get('/git','Git');
 
+    Route::get('/acc', 'AccController@Show');
+
     Route::get('/account', 'AccController@Show'); //Dorobutu kontroller
 
 Auth::routes();

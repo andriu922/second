@@ -16,8 +16,8 @@ class UsersinfoTable extends Migration
         //
         Schema::create('UsersInfo', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('First name')->nullable();
-            $table->string('Last name')->nullable();
+            $table->string('FirstName')->nullable();
+            $table->string('LastName')->nullable();
             $table->string('Nickname')->nullable();
             $table->integer('Age')->nullable();
             $table->string('Avatar')->nullable();

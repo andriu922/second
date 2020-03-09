@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    First name : {{$a->First name}}
-    Last name : {{$a->Last name}}
+    First name : {{$acc->FirstName}}
+    Last name : {{$acc->LastName}}
+    Nickname : {{$acc->Nickname}}
+    Age : {{$acc->Age}}
 @endsection
